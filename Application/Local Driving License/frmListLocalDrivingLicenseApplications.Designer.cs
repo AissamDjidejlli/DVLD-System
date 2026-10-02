@@ -386,7 +386,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.dgvLocalDrivingLicenseApplications);
             this.Controls.Add(this.cbStatus);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmListLocalDrivingLicenseApplications";
             this.Text = "frmListLocalDrivingLicenseApplications";
             this.Load += new System.EventHandler(this.frmListLocalDrivingLicenseApplications_Load);

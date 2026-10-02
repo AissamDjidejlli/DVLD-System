@@ -33,7 +33,7 @@
             // 
             // ctrlShudleTest1
             // 
-            this.ctrlShudleTest1.Location = new System.Drawing.Point(0, 0);
+            this.ctrlShudleTest1.Location = new System.Drawing.Point(12, -1);
             this.ctrlShudleTest1.Name = "ctrlShudleTest1";
             this.ctrlShudleTest1.Size = new System.Drawing.Size(550, 675);
             this.ctrlShudleTest1.TabIndex = 0;

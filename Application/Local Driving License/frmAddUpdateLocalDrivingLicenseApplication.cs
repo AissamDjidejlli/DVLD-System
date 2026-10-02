@@ -66,13 +66,10 @@ namespace DVLD.Application.Local_Driving_License
                 lblTitle.Text = "Add New Local Driving License Application";
                 _LocalDrivingLicenseApplication = new clsLocalDrivingLicenseApplication();
                 _ApplicationInfo = new clsApplication();
-                _ApplicationInfo.ApplicationDate = DateTime.Now;
-            }
-            else
-            {
-                lblTitle.Text = "Update Local Driving License Application";
             }
 
+
+            lblTitle.Text = "Update Local Driving License Application";
             
             lblApplicationDate.Text = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss tt");
             lblCreatedByUser.Text = clsGlobalSetting.CurrentUser.UserName;
@@ -81,7 +78,7 @@ namespace DVLD.Application.Local_Driving_License
         }
 
 
-        private void _LoadUserInfo()
+        private void _LoadApplicationInfo()
         {
             _LicenseClassInfo = clsLicenseClasses.Find(cbLicenseClass.Text.ToString());
 
@@ -141,7 +138,7 @@ namespace DVLD.Application.Local_Driving_License
                 }
             }
 
-            _LoadUserInfo();
+            _LoadApplicationInfo();
 
 
             int ApplicationID = clsApplication.GetActiveApplicationForLicenseClasses(

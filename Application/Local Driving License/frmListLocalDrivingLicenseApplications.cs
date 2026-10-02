@@ -402,7 +402,7 @@ namespace DVLD.Application.Local_Driving_License
                     TestEnable(LocalDrivingLicenseApplicationID);
                 }
 
-                if (Status == "Cancelled")
+                else if (Status == "Cancelled")
                 {
                     editToolStripMenuItem.Enabled = false;
                     DeleteApplicationToolStripMenuItem.Enabled = false;
@@ -412,7 +412,8 @@ namespace DVLD.Application.Local_Driving_License
                     showLicenseToolStripMenuItem.Enabled = false;
                 }
 
-                if (Status == "Completed")
+                //(Status == "Completed")
+                else 
                 {
                     editToolStripMenuItem.Enabled = false;
                     DeleteApplicationToolStripMenuItem.Enabled = false;
